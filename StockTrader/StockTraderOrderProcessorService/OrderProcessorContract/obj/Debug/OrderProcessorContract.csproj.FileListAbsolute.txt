@@ -1,0 +1,7 @@
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorContract\bin\Debug\Trade.OrderProcessorContract.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorContract\bin\Debug\Trade.OrderProcessorContract.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorContract\bin\Debug\Trade.BusinessServiceDataContract.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorContract\bin\Debug\Trade.BusinessServiceDataContract.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorContract\obj\Debug\OrderProcessorContract.csprojResolveAssemblyReference.cache
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorContract\obj\Debug\Trade.OrderProcessorContract.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorContract\obj\Debug\Trade.OrderProcessorContract.pdb

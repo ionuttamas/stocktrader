@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RoleModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Trade_WebRole" version="2.0.6493.2" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <Startup>
+    <Task commandLine="DiagnosticsAgent.exe" taskType="background" relativePath="plugins\Diagnostics">
+      <Environment>
+        <Variable name="RdModuleName" value="Diagnostics" />
+        <Variable name="WaRoleType" value="IISWebRole" />
+      </Environment>
+    </Task>
+    <Task commandLine="DiagnosticsAgent.exe /blockStartup" relativePath="plugins\Diagnostics">
+      <Environment>
+        <Variable name="RdModuleName" value="Diagnostics" />
+        <Variable name="WaRoleType" value="IISWebRole" />
+      </Environment>
+    </Task>
+    <Task commandLine="startup\setPools.cmd" executionContext="elevated" relativePath="approot\bin">
+      <Environment>
+        <Variable name="WaRoleType" value="IISWebRole" />
+      </Environment>
+    </Task>
+  </Startup>
+  <Runtime>
+    <EntryPoint>
+      <NetFxEntryPoint assemblyName="Trade.Web.dll" targetFrameworkVersion="v4.0" />
+    </EntryPoint>
+  </Runtime>
+  <ConfigurationSettings>
+    <Setting name="ConnectionString" nameSpace="Microsoft.WindowsAzure.Plugins.Diagnostics" />
+  </ConfigurationSettings>
+  <Properties>
+    <Property name="TargetFrameworkVersion" value="v4.0" />
+    <Property name="RoleType" value="Web" />
+    <Property name="RoleName" value="Trade_WebRole" />
+    <Property name="ProjectName" value="Trade_WebRole" />
+    <Property name="Configuration" value="Debug" />
+    <Property name="Platform" value="AnyCPU" />
+    <Property name="RoleTargetFramework" value="v4.0" />
+    <Property name="OutputDir" value="E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderWebApplication\AzureStockTrader\obj\Debug\Trade_WebRole\" />
+    <Property name="EntryPoint" value="Trade.Web.dll" />
+    <Property name="SourceDir" value="E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderWebApplication\AzureStockTraderRole\" />
+    <Property name="SitePhysicalPath" value="E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderWebApplication\AzureStockTraderRole\" />
+    <Property name="TargetRuntimeVersion" value="v4.0" />
+  </Properties>
+  <Sites>
+    <Site name="Web" physicalDirectory="E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderWebApplication\AzureStockTraderRole\">
+      <Bindings>
+        <Binding name="Endpoint1" endpointName="NodeServiceEndpointHttp" />
+        <Binding name="Endpoint1" endpointName="HttpsEndpoint" />
+      </Bindings>
+    </Site>
+  </Sites>
+</RoleModel>

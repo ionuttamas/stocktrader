@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="false" Service="Trade.BusinessServiceImplementation.TradeServiceBSLResponse" Factory="Trade.BusinessServiceHostConfigurationImplementation.ConfigurationActions" %>

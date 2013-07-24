@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AzureStockTrader" schemaVersion="2013-03.2.0" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <WebRole name="Trade_WebRole">
+    <LocalResources>
+      <LocalStorage name="DiagnosticStore" sizeInMB="4096" cleanOnRoleRecycle="false" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="HttpsEndpoint" protocol="https" port="443" certificate="StockTraderWebAppSSL.Com" localPort="443" />
+      <InternalEndpoint name="NodeServiceEndpointHttp" protocol="http" />
+    </Endpoints>
+    <Certificates>
+      <Certificate name="StockTraderBSLClient.Com" storeLocation="LocalMachine" storeName="TrustedPeople" />
+      <Certificate name="StockTraderWebAppSSL.Com" storeLocation="LocalMachine" storeName="TrustedPeople" />
+    </Certificates>
+  </WebRole>
+</ServiceDefinition>

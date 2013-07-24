@@ -1,0 +1,7 @@
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\IDAL\bin\Debug\Trade.IDAL.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\IDAL\bin\Debug\Trade.IDAL.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\IDAL\bin\Debug\Trade.BusinessServiceDataContract.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\IDAL\bin\Debug\Trade.BusinessServiceDataContract.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\IDAL\obj\Debug\StockTraderIDAL.csprojResolveAssemblyReference.cache
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\IDAL\obj\Debug\Trade.IDAL.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\IDAL\obj\Debug\Trade.IDAL.pdb

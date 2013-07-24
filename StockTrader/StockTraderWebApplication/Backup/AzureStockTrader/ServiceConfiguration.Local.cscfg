@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AzureStockTrader" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2012-05.1.7">
+  <Role name="Trade_WebRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="StockTraderBSLClient.Com" thumbprint="EB0C8C302C4F5E22E4492006F1D16D01008E7826" thumbprintAlgorithm="sha1" />
+      <Certificate name="StockTraderWebAppSSL.Com" thumbprint="D5394450C339FDA0FD03A7A131CA0142BC80EE68" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20826</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{018CF591-E45C-4E74-B613-CA5C1FCAFE89}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Trade.BusinessServiceImplementation</RootNamespace>
+    <AssemblyName>Trade.BusinessServiceImplementation</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>stocktrader.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags></FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName />
+    <SccLocalPath />
+    <SccAuxPath />
+    <SccProvider />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ConfigService.CustomValidators, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.CustomValidators.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigService.ServiceConfigurationBase, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL" />
+    <Reference Include="ConfigService.ServiceConfigurationUtility, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.ServiceConfigurationUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigService.ServiceNodeCommunication.DataContract, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.ServiceNodeCommunication.DataContract.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ServiceBus, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\SharedLibraries\WinAzureAppFabric\Microsoft.ServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ServiceBus.AccessControlExtensions">
+      <HintPath>..\..\..\SharedLibraries\ACS\Microsoft.ServiceBus.AccessControlExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WebHttpAuthentication.cs" />
+    <Compile Include="ServiceBusHelper.cs" />
+    <Compile Include="TradeServiceResponse.cs" />
+    <Compile Include="CustomValidator.cs" />
+    <Compile Include="ErrorHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TradeEngine.cs" />
+    <Compile Include="TradeService.cs" />
+    <Compile Include="TradeServiceRest.cs" />
+    <Compile Include="WebHttpAuthorizationPolicy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="stocktrader.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\StockTraderDataAccessLayer\DALFactory\StockTraderDALFactory.csproj">
+      <Project>{F67C8D85-6DC0-45CD-A748-636E3881E2F5}</Project>
+      <Name>StockTraderDALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StockTraderDataAccessLayer\IDAL\StockTraderIDAL.csproj">
+      <Project>{509EB16A-6586-4200-8323-32438C9B47DC}</Project>
+      <Name>StockTraderIDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StockTraderOrderProcessorService\OrderProcessorASyncClient\OrderProcessorAsyncClient.csproj">
+      <Project>{623BC346-84FA-4B9E-B043-811DB7FBEC2A}</Project>
+      <Name>OrderProcessorAsyncClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StockTraderOrderProcessorService\OrderProcessorContract\OrderProcessorContract.csproj">
+      <Project>{1AD6DBB4-CA83-460F-BDCD-45E1ECE318B4}</Project>
+      <Name>OrderProcessorContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StockTraderOrderProcessorService\OrderProcessorImplementation\OrderProcessorImplementation.csproj">
+      <Project>{657AD453-B00F-4F8A-9A94-25874320DE2C}</Project>
+      <Name>OrderProcessorImplementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessServiceConfigurationSettings\BusinessServiceConfigurationSettings.csproj">
+      <Project>{ED14B721-A6F1-4B65-89FA-18B78345CB5A}</Project>
+      <Name>BusinessServiceConfigurationSettings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessServiceContract\BusinessServiceContract.csproj">
+      <Project>{36FA3564-9AF5-496A-805B-6ED262CAAE2B}</Project>
+      <Name>BusinessServiceContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessServiceDataContract\BusinessServiceDataContract.csproj">
+      <Project>{EBB1604B-3F50-4A81-87C3-1AE4029EEEC6}</Project>
+      <Name>BusinessServiceDataContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockTraderUtility\Utility.csproj">
+      <Project>{382E6E1C-E430-4F6C-BC41-5D84A3798B02}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AzureBusinessService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2012-05.1.7">
+  <Role name="AzureBusinessServiceRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="StockTraderBSLService.Com" thumbprint="BE6089285CDC0F3E6B862EDFB476AE99831693FA" thumbprintAlgorithm="sha1" />
+      <Certificate name="StockTraderBSLClient.Com" thumbprint="EB0C8C302C4F5E22E4492006F1D16D01008E7826" thumbprintAlgorithm="sha1" />
+      <Certificate name="StockTraderOPSClient.Com" thumbprint="3A4F369CB3597D70512F5FDF786A9414F3746FB3" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

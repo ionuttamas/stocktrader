@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="AzureOrderProcessorService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2012-05.1.7">
+  <WorkerRole name="AzureOPSRole" enableNativeCodeExecution="true">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <Endpoints>
+      <InternalEndpoint name="NodeServiceEndpointTcp" protocol="tcp" />
+      <InputEndpoint name="ConfigEndpointSecure" protocol="tcp" port="11003" />
+      <InputEndpoint name="OrderEndpointSecure" protocol="tcp" port="11001" />
+    </Endpoints>
+    <Certificates>
+      <Certificate name="StockTraderOPSService.Com" storeLocation="LocalMachine" storeName="TrustedPeople" />
+      <Certificate name="StockTraderOPSClient.Com" storeLocation="LocalMachine" storeName="TrustedPeople" />
+    </Certificates>
+    <LocalResources>
+      <LocalStorage name="OpsWcf.svclog" cleanOnRoleRecycle="true" sizeInMB="1000" />
+    </LocalResources>
+  </WorkerRole>
+</ServiceDefinition>

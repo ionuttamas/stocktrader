@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52DF447B-499A-4C91-871F-0CE06AB05680}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Trade.Web</RootNamespace>
+    <AssemblyName>Trade.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName />
+    <SccLocalPath />
+    <SccAuxPath />
+    <SccProvider />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ConfigService.AzureConfigUtility, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.AzureConfigUtility.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ConfigService.CustomValidators, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.CustomValidators.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigService.DALSQLHelper, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.DALSQLHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigService.IConfigActions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.IConfigActions.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigService.LoadBalancingClient, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.LoadBalancingClient.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigService.RuntimeHostData, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.RuntimeHostData.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigService.ServiceConfiguration.DALFactory, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.ServiceConfiguration.DALFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigService.ServiceConfiguration.DALSQLServer">
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.ServiceConfiguration.DALSQLServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigService.ServiceConfiguration.DataContract, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.ServiceConfiguration.DataContract.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigService.ServiceConfiguration.IDAL, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.ServiceConfiguration.IDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigService.ServiceConfigurationBase, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.ServiceConfigurationBase.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfigService.ServiceConfigurationHelper, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.ServiceConfigurationHelper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ConfigService.ServiceConfigurationUtility, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.ServiceConfigurationUtility.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ConfigService.ServiceNodeCommunication.DataContract, Version=6.0.0.0, Culture=neutral, PublicKeyToken=3ee2596f5a3c4873, processorArchitecture=MSIL">
+      <HintPath>..\..\..\SharedLibraries\Configuration\ConfigService.ServiceNodeCommunication.DataContract.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationServer.Caching.Client">
+      <HintPath>..\..\..\..\SharedLibraries\WinAzureAppFabric\Microsoft.ApplicationServer.Caching.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationServer.Caching.Core">
+      <HintPath>..\..\..\..\SharedLibraries\WinAzureAppFabric\Microsoft.ApplicationServer.Caching.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ServiceBus, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\SharedLibraries\WinAzureAppFabric\Microsoft.ServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.DistributedCache">
+      <HintPath>..\..\..\..\SharedLibraries\WinAzureAppFabric\Microsoft.Web.DistributedCache.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.WindowsFabric.Common">
+      <HintPath>..\..\..\..\SharedLibraries\WinAzureAppFabric\Microsoft.WindowsFabric.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsFabric.Data.Common">
+      <HintPath>..\..\..\..\SharedLibraries\WinAzureAppFabric\Microsoft.WindowsFabric.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account.aspx" />
+    <Content Include="config.svc" />
+    <Content Include="Controls\AccountOrders.ascx" />
+    <Content Include="Controls\ClosedOrders.ascx" />
+    <Content Include="Controls\MarketSummary.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Docs.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Glossary.aspx" />
+    <Content Include="Images\AboutBackground.jpg" />
+    <Content Include="Images\AccountFill.png" />
+    <Content Include="Images\AlertFill.png" />
+    <Content Include="Images\arrowdown.png" />
+    <Content Include="Images\arrowup.png" />
+    <Content Include="Images\azurestocktrader-logoleft.png" />
+    <Content Include="Images\Background.png" />
+    <Content Include="Images\Configweb.png" />
+    <Content Include="Images\DotNetLogo-Left.png" />
+    <Content Include="Images\logo-left.png" />
+    <Content Include="Images\MktSummaryLeftFill.png" />
+    <Content Include="Images\MktSummaryRightFill.png" />
+    <Content Include="Images\OrderFill.png" />
+    <Content Include="Images\PortfolioFill.png" />
+    <Content Include="Images\QuotesFill.png" />
+    <Content Include="Images\stock_market.jpg" />
+    <Content Include="Images\TechTableFill.png" />
+    <Content Include="Images\trade.gif" />
+    <Content Include="Images\VS-ConfigWeb.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="node.svc" />
+    <Content Include="Portfolio.aspx" />
+    <Content Include="PortfolioBySymbol.aspx" />
+    <Content Include="Quotes.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Startup\StartupTask.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StockTrade.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="TradeHome.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_LocalResources\Input.cs" />
+    <Compile Include="Controls\AccountOrders.ascx.cs">
+      <DependentUpon>AccountOrders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AccountOrders.ascx.designer.cs">
+      <DependentUpon>AccountOrders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ClosedOrders.ascx.cs">
+      <DependentUpon>ClosedOrders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ClosedOrders.ascx.designer.cs">
+      <DependentUpon>ClosedOrders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MarketSummary.ascx.cs">
+      <DependentUpon>MarketSummary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MarketSummary.ascx.designer.cs">
+      <DependentUpon>MarketSummary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs.aspx.cs">
+      <DependentUpon>Docs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Docs.aspx.designer.cs">
+      <DependentUpon>Docs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Glossary.aspx.cs">
+      <DependentUpon>Glossary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Glossary.aspx.designer.cs">
+      <DependentUpon>Glossary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portfolio.aspx.cs">
+      <DependentUpon>Portfolio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portfolio.aspx.designer.cs">
+      <DependentUpon>Portfolio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PortfolioBySymbol.aspx.cs">
+      <DependentUpon>PortfolioBySymbol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PortfolioBySymbol.aspx.designer.cs">
+      <DependentUpon>PortfolioBySymbol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quotes.aspx.cs">
+      <DependentUpon>Quotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotes.aspx.designer.cs">
+      <DependentUpon>Quotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.master.cs">
+      <DependentUpon>Site.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.master.designer.cs">
+      <DependentUpon>Site.master</DependentUpon>
+    </Compile>
+    <Compile Include="StockTrade.aspx.cs">
+      <DependentUpon>StockTrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockTrade.aspx.designer.cs">
+      <DependentUpon>StockTrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TradeHome.aspx.cs">
+      <DependentUpon>TradeHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TradeHome.aspx.designer.cs">
+      <DependentUpon>TradeHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Startup\setPools.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\StockTraderBusinessService\BusinessServiceImplementation\BusinessServiceImplementation.csproj">
+      <Project>{018CF591-E45C-4E74-B613-CA5C1FCAFE89}</Project>
+      <Name>BusinessServiceImplementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StockTraderBusinessService\StockTraderUtility\Utility.csproj">
+      <Project>{382E6E1C-E430-4F6C-BC41-5D84A3798B02}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StockTraderDataAccessLayer\DALSQLAzureFederations\StockTraderDALSQLAzureFederations.csproj">
+      <Project>{129CB558-4515-4A83-8100-AAA21BC846D5}</Project>
+      <Name>StockTraderDALSQLAzureFederations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StockTraderDataAccessLayer\DALSQLAzure\StockTraderDALSQLAzure.csproj">
+      <Project>{3D4953C9-C78C-4A33-8290-4836FAD84747}</Project>
+      <Name>StockTraderDALSQLAzure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StockTraderOrderProcessorService\OrderProcessorASyncClient\OrderProcessorAsyncClient.csproj">
+      <Project>{623BC346-84FA-4B9E-B043-811DB7FBEC2A}</Project>
+      <Name>OrderProcessorAsyncClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceConfigurationSettings\StockTraderWebApplicationSettings.csproj">
+      <Project>{D8E1ECD5-2D86-4994-A37B-BF4D24334A2E}</Project>
+      <Name>StockTraderWebApplicationSettings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockTraderWebApplicationClients\StockTraderWebApplicationServiceClient.csproj">
+      <Project>{3A1AB418-60B7-44BF-AE17-E74F425CD5C9}</Project>
+      <Name>StockTraderWebApplicationServiceClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockTraderWebApplicationConfigurationImplementation\StockTraderWebApplicationConfigurationImplementation.csproj">
+      <Project>{AF8B8AC7-2F85-479D-9514-570E56CB7739}</Project>
+      <Name>StockTraderWebApplicationConfigurationImplementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockTraderWebApplicationUIModelClasses\StockTraderWebApplicationModelClasses.csproj">
+      <Project>{97F8A696-9918-4DC4-8D6E-9E574B9A4059}</Project>
+      <Name>StockTraderWebApplicationModelClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1691</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

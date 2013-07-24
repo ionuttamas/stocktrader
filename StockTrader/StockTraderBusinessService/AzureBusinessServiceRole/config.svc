@@ -1,0 +1,1 @@
+<% @ServiceHost language = "c#" Debug="false" Service="Trade.BusinessServiceHostConfigurationImplementation.ConfigurationService" Factory="Trade.BusinessServiceHostConfigurationImplementation.ConfigurationActions" %>

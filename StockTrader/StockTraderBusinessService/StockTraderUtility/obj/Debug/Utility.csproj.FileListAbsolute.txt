@@ -1,0 +1,5 @@
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderBusinessService\StockTraderUtility\bin\Debug\Trade.Utility.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderBusinessService\StockTraderUtility\bin\Debug\Trade.Utility.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderBusinessService\StockTraderUtility\obj\Debug\Utility.csprojResolveAssemblyReference.cache
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderBusinessService\StockTraderUtility\obj\Debug\Trade.Utility.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderBusinessService\StockTraderUtility\obj\Debug\Trade.Utility.pdb

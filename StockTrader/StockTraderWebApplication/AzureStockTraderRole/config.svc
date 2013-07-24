@@ -1,0 +1,2 @@
+<% @ServiceHost language = "c#" Debug="false" Service="Trade.StockTraderWebApplicationConfigurationImplementation.ConfigurationService" Factory="Trade.StockTraderWebApplicationConfigurationImplementation.ConfigurationActions" %>
+

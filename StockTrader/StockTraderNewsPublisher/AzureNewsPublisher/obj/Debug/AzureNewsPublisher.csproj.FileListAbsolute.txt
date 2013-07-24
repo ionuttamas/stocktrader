@@ -1,0 +1,16 @@
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\bin\Debug\Trade.AzureNewsPublisher.exe.config
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\obj\Debug\AzureNewsPublisher.csprojResolveAssemblyReference.cache
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\obj\Debug\MainWindow.baml
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\obj\Debug\MainWindow.g.cs
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\obj\Debug\App.g.cs
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\obj\Debug\Trade.AzureNewsPublisher_MarkupCompile.cache
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\obj\Debug\Trade.AzureNewsPublisher.g.resources
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\bin\Debug\Trade.AzureNewsPublisher.exe
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\bin\Debug\Trade.AzureNewsPublisher.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\bin\Debug\Microsoft.ServiceBus.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\bin\Debug\Trade.AzureNewsPublisherDataContracts.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\bin\Debug\Trade.AzureNewsPublisherDataContracts.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\bin\Debug\Microsoft.ServiceBus.xml
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\obj\Debug\Trade.AzureNewsPublisher.exe
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisher\obj\Debug\Trade.AzureNewsPublisher.pdb

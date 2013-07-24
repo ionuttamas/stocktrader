@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AzureOrderProcessorService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2012-05.1.7">
+  <Role name="AzureOPSRole">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="StockTraderOPSService.Com" thumbprint="CF2F900D97D2CD76B36B4FAA941558E595F1A468" thumbprintAlgorithm="sha1" />
+      <Certificate name="StockTraderOPSClient.Com" thumbprint="3A4F369CB3597D70512F5FDF786A9414F3746FB3" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

@@ -1,0 +1,5 @@
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisherDataContracts\bin\Debug\Trade.AzureNewsPublisherDataContracts.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisherDataContracts\bin\Debug\Trade.AzureNewsPublisherDataContracts.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisherDataContracts\obj\Debug\AzureNewsPublisherDataContracts.csprojResolveAssemblyReference.cache
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisherDataContracts\obj\Debug\Trade.AzureNewsPublisherDataContracts.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderNewsPublisher\AzureNewsPublisherDataContracts\obj\Debug\Trade.AzureNewsPublisherDataContracts.pdb

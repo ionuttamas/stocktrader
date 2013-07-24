@@ -1,0 +1,13 @@
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\DALSQLAzure\bin\Debug\Trade.DALSQLAzure.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\DALSQLAzure\bin\Debug\Trade.DALSQLAzure.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\DALSQLAzure\bin\Debug\ConfigService.DALSQLHelper.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\DALSQLAzure\bin\Debug\Trade.BusinessServiceDataContract.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\DALSQLAzure\bin\Debug\Trade.IDAL.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\DALSQLAzure\bin\Debug\Trade.Utility.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\DALSQLAzure\bin\Debug\Trade.BusinessServiceDataContract.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\DALSQLAzure\bin\Debug\Trade.Utility.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\DALSQLAzure\bin\Debug\Trade.IDAL.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\DALSQLAzure\bin\Debug\ConfigService.DALSQLHelper.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\DALSQLAzure\obj\Debug\StockTraderDALSQLAzure.csprojResolveAssemblyReference.cache
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\DALSQLAzure\obj\Debug\Trade.DALSQLAzure.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderDataAccessLayer\DALSQLAzure\obj\Debug\Trade.DALSQLAzure.pdb

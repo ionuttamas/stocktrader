@@ -1,0 +1,6 @@
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderBusinessService\BusinessServiceContract\bin\Debug\Trade.BusinessServiceContract.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderBusinessService\BusinessServiceContract\bin\Debug\Trade.BusinessServiceContract.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderBusinessService\BusinessServiceContract\bin\Debug\Trade.BusinessServiceDataContract.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderBusinessService\BusinessServiceContract\bin\Debug\Trade.BusinessServiceDataContract.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderBusinessService\BusinessServiceContract\obj\Debug\Trade.BusinessServiceContract.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderBusinessService\BusinessServiceContract\obj\Debug\Trade.BusinessServiceContract.pdb

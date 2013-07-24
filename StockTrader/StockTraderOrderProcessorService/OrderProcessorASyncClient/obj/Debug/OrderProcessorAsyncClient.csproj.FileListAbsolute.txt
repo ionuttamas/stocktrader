@@ -1,0 +1,14 @@
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\bin\Debug\Trade.OrderProcessorAsyncClient.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\bin\Debug\Trade.OrderProcessorAsyncClient.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\bin\Debug\ConfigService.LoadBalancingClient.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\bin\Debug\Microsoft.ServiceBus.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\bin\Debug\Trade.BusinessServiceDataContract.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\bin\Debug\Trade.OrderProcessorContract.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\bin\Debug\ConfigService.ServiceNodeCommunication.DataContract.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\bin\Debug\Trade.BusinessServiceDataContract.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\bin\Debug\Trade.OrderProcessorContract.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\bin\Debug\ConfigService.LoadBalancingClient.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\bin\Debug\ConfigService.ServiceNodeCommunication.DataContract.pdb
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\obj\Debug\OrderProcessorAsyncClient.csprojResolveAssemblyReference.cache
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\obj\Debug\Trade.OrderProcessorAsyncClient.dll
+E:\Work\General Research\Azure Stock Trader 6.0\StockTrader\StockTraderOrderProcessorService\OrderProcessorASyncClient\obj\Debug\Trade.OrderProcessorAsyncClient.pdb
